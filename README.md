@@ -7,4 +7,3 @@ Analyze SEC filings — specifically 8-K and other company disclosures — using
 Rithik Reddy – nibbarar@oregonstate.edu  
 Norman O’Brien – obrienno@oregonstate.edu  
 Hsun-Yu Kuo – kuohsu@oregonstate.edu  
-Luke Hashbarger – hashbarl@oregonstate.edu
