@@ -1,7 +1,7 @@
 # Natural Language Processing of Financial Disclosures
 
 ## Project Description
-Analyze SEC filings — specifically 8-K and other company disclosures — using natural language processing to extract and structure key topics for financial research and market analysis.
+Develop a user friendly application to translate a large set of documents into English and to perform topic analysis on them.
 
 ## Team Roster & Contacts
 Rithik Reddy – nibbarar@oregonstate.edu  
