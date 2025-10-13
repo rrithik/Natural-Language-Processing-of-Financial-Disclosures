@@ -9,5 +9,5 @@ Norman O’Brien – obrienno@oregonstate.edu
 Hsun-Yu Kuo – kuohsu@oregonstate.edu  
 
 
-Branching flow
+Branching flow:
 feature/* → PR → ≥ 1 review → merge
