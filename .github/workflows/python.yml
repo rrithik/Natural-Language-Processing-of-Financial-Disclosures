@@ -4,36 +4,28 @@ on:
   push:
     branches:
       - '**'         # Run on pushes to all branches
-    paths:
-      - '**.py'      # Only trigger when Python files change
   pull_request:
     branches:
       - '**'         # Run on PRs for any branch
-    paths:
-      - '**.py'      # Only trigger when Python files change
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout your repository code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # Step 3: Install dependencies (optional, if you have requirements.txt)
       - name: Install dependencies
         if: exists('requirements.txt')
         run: |
           pip install -r requirements.txt
 
-      # Step 4: Run all Python scripts in the repo
       - name: Run all Python scripts
         run: |
           echo "Running all Python scripts..."
