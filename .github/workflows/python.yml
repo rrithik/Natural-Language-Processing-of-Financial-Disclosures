@@ -1,35 +1,36 @@
-name: Python CI
+name: Python CI - Scraper Test
 
 on:
   push:
     branches:
-      - '**'         # Run on pushes to all branches
+      - '**'         # Run on all branches
   pull_request:
     branches:
-      - '**'         # Run on PRs for any branch
+      - '**'         # Run on all PRs
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout repository code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # Step 3: Install dependencies (if you have a requirements.txt)
       - name: Install dependencies
-        if: exists('requirements.txt')
+        if: hashFiles('requirements.txt') != ''
         run: |
           pip install -r requirements.txt
 
-      - name: Run all Python scripts
+      # Step 4: Run your scraper
+      - name: Run scraper script
         run: |
-          echo "Running all Python scripts..."
-          for file in $(find . -name "*.py"); do
-            echo "Executing $file"
-            python "$file"
-          done
+          echo "Running topic analysis scraper..."
+          python topic_analysis.py
