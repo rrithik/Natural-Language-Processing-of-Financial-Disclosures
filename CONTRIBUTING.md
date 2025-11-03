@@ -2,54 +2,178 @@
 
 How to set up, code, test, review, and release so contributions meet our Definition of Done.
 
+
 ## Code of Conduct
 
-Reference the project/community behavior expectations and reporting process.
+All contributors are expected to maintain a respectful, professional, and inclusive environment.
+We follow the [Contributor Covenant](https://www.contributor-covenant.org/) guidelines.
+Harassment or discrimination of any kind will not be tolerated.
+If you experience or observe inappropriate behavior, contact the project manager or report it through official OSU channels.
+
 
 ## Getting Started
 
-List prerequisites, setup steps, environment variables/secrets handling, and how to run the app locally.
+### **Prerequisites**
+
+* Python 3.11+
+* Git and GitHub account
+* Access to the project repository and required API keys (stored in `.env`, not committed to Git)
+
+### **Setup**
+
+```bash
+git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures.git
+cd Natural-Language-Processing-of-Financial-Disclosures
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+To run the app locally:
+
+```bash
+python main.py
+```
+
+Environment variables (e.g., API keys) must be placed in a `.env` file and **never committed** to Git.
+
 
 ## Branching & Workflow
 
-Describe the workflow (e.g., trunk-based or GitFlow), default branch, branch naming, and when to rebase vs. merge.
+We use a **feature-branch workflow** based on the `main` branch.
+
+**Naming convention:**
+
+```
+feature/<short-description>
+bugfix/<issue-id>
+docs/<update-description>
+```
+
+* Create a new branch for each task or issue.
+* Rebase frequently to stay updated with `main`.
+* Merge via Pull Request (PR) after at least one approved review.
+
 
 ## Issues & Planning
 
-Explain how to file issues, required templates/labels, estimation, and triage/assignment practices.
+* File new issues under the **Issues** tab with the correct label (e.g., `bug`, `enhancement`, `documentation`).
+* Use the provided issue template.
+* The project manager assigns issues during weekly sprint planning.
+* Include an estimated completion time and relevant links if applicable.
+
 
 ## Commit Messages
 
-State the convention (e.g., Conventional Commits), include examples, and how to reference issues.
+Follow the **Conventional Commits** standard:
+
+```
+<type>(scope): short description
+```
+
+**Examples:**
+
+```
+feat(parser): add SEC 8-K file processing logic
+fix(ci): correct lint-check job syntax
+docs(readme): update setup instructions
+```
+
+Each commit should reference an issue number when applicable, e.g., `#12`.
+
 
 ## Code Style, Linting & Formatting
 
-Name the formatter/linter, config file locations, and the exact commands to check/fix locally.
+We use **Black**, **Flake8**, and **isort** for code formatting and linting.
+
+**Config files:**
+
+* `.flake8`
+* `pyproject.toml`
+
+**Commands:**
+
+```bash
+black .
+isort .
+flake8 .
+mypy .
+```
+
+These checks also run automatically through CI before merging any PR.
+0
+
 
 ## Testing
 
-Define required test types, how to run tests, expected coverage thresholds, and when new/updated tests are mandatory.
+* All new features and bug fixes must include **unit or integration tests** in the `/tests` directory.
+* Run all tests locally before pushing:
+
+  ```bash
+  pytest -v
+  ```
+* A PR cannot be merged if any test fails in CI.
+* Minimum coverage target: **75%**.
+
 
 ## Pull Requests & Reviews
 
-Outline PR requirements (template, checklist, size limits), reviewer expectations, approval rules, and required status checks.
+Before opening a PR:
+
+1. Run `black .`, `flake8 .`, and `pytest -v`.
+2. Ensure your branch is rebased on the latest `main`.
+3. Fill out the PR template, describing your changes and testing.
+4. Request review from at least one teammate.
+
+PRs must:
+
+* Pass all CI checks
+* Receive **≥ 1 approval**
+* Be small and focused (under ~400 lines of diff preferred)
+
 
 ## CI/CD
 
-Link to pipeline definitions, list mandatory jobs, how to view logs/re-run jobs, and what must pass before merge/release.
+* CI pipeline file: [`.github/workflows/linter-check.yml`](https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures/blob/main/.github/workflows/linter-check.yml)
+* Linting and tests run automatically on every push and pull request.
+* You can view logs or re-run jobs from the [GitHub Actions Dashboard](https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures/actions).
+* All required checks must pass before merging to `main`.
+
 
 ## Security & Secrets
 
-State how to report vulnerabilities, prohibited patterns (hard-coded secrets), dependency update policy, and scanning tools.
+* Never commit API keys, credentials, or `.env` files.
+* Report security concerns privately to the team lead or instructor.
+* Use `.gitignore` to exclude sensitive files.
+* Dependencies are updated monthly using Dependabot or manual review.
+
 
 ## Documentation Expectations
 
-Specify what must be updated (README, docs/, API refs, CHANGELOG) and docstring/comment standards.
+* Update relevant docs for every feature or fix:
+
+  * `README.md`
+  * `/docs/` folder
+  * Inline code comments and docstrings
+* Follow Python’s **PEP 257** docstring conventions.
+* Update the changelog after significant releases.
+
 
 ## Release Process
 
-Describe versioning scheme, tagging, changelog generation, packaging/publishing steps, and rollback process.
+* Use **semantic versioning** (`v1.2.0`, `v1.2.1`, etc.).
+* Tag releases via GitHub after successful CI runs.
+* Update the changelog (`CHANGELOG.md`) for every release.
+* If a rollback is required, revert the corresponding release tag and issue a hotfix branch.
+
 
 ## Support & Contact
 
-Provide maintainer contact channel, expected response windows, and where to ask questions.
+ For general questions: open a **Discussion** or contact the project manager via Discord or email.
+* Response time: within **24 hours** during weekdays.
+* Maintainers:
+
+  * Norman O’Brien (Documentation Lead / Head of Architecture / Tester)
+  * Rithik Nibbara (Head of testing / Developer)
+  * Hsun-Yu Kuo (Meeting Coordinator / Developer)
+  * Trinity Paulson (Project Manager)
