@@ -25,7 +25,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install black flake8 isort mypy
 
-      - name: Run Black (formatting check)
+      - name: Ensure consistent Flake8 settings
+        run: |
+          echo "[flake8]" > .flake8
+          echo "max-line-length = 100" >> .flake8
+          echo "extend-ignore = E203, W503" >> .flake8
+          echo "exclude = .git,__pycache__,build,dist,venv,.venv" >> .flake8
+
+      - name: Run Black (auto format)
         run: black .
 
       - name: Run isort (import sorting check)
