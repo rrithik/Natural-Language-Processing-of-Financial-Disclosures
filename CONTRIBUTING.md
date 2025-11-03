@@ -5,11 +5,7 @@ This guide explains how to set up, code, test, review, and release updates so th
 
 ## Code of Conduct
 
-All contributors are expected to maintain a respectful, professional, and inclusive environment.
-We follow the [Contributor Covenant](https://www.contributor-covenant.org/) guidelines.
-Harassment or discrimination of any kind will not be tolerated.
-If you experience or observe inappropriate behavior, contact the project manager or report it through official OSU channels.
-
+All contributors should behave in a respectful, professional, and inclusive manner. Please follow the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct. Harassment or discrimination of any kind will not be tolerated. If you experience or witness inappropriate behavior, please report it to the project manager or through official OSU channels. 
 
 ## Getting Started
 
