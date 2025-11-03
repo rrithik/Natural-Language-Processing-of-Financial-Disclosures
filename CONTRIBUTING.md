@@ -1,6 +1,6 @@
 # Contributing Guide
 
-How to set up, code, test, review, and release so contributions meet our Definition of Done.
+This guide explains how to set up, code, test, review, and release updates so that all contributions meet our team’s **Definition of Done (DoD)** and maintain consistent quality across the project.
 
 
 ## Code of Conduct
