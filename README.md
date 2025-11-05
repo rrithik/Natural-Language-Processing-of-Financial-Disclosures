@@ -8,9 +8,9 @@ Rithik Reddy – Admin (full access) nibbarar@oregonstate.edu
 
 Norman O’Brien – Collaborator (Read, Write) obrienno@oregonstate.edu 
 
-Hsun-Yu Kuo – Collaborator (Read,Write) kuohsu@oregonstate.edu
+Hsun-Yu Kuo – Collaborator (Read, Write) kuohsu@oregonstate.edu
 
-Trinity Paulson – Collaborator (Read,Write) paulsotr@oregonstate.edu
+Trinity Paulson – Collaborator (Read, Write) paulsotr@oregonstate.edu
 
 Dr. Blackburne – Partner (Read, view-only)
 
