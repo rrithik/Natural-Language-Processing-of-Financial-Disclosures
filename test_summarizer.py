@@ -1,6 +1,8 @@
 import os
 import tempfile
+
 from summarize_disclosure import summarize_disclosure
+
 
 def test_summarize_disclosure_returns_string(monkeypatch):
     """
