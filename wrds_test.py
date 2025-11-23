@@ -4,16 +4,18 @@ print("Attempting WRDS connection...")
 
 try:
     # If this is your first time, put your username.
-    db = wrds.Connection(wrds_username="your_username")     
+    db = wrds.Connection(wrds_username="your_username")
 
     print("\nConnected to WRDS successfully!")
     print("Listing first 5 rows of CRSP stock names...\n")
 
-    df = db.raw_sql("""
+    df = db.raw_sql(
+        """
         SELECT permno, comnam
         FROM crsp.stocknames
         LIMIT 5;
-    """)
+    """
+    )
 
     print(df)
 

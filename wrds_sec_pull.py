@@ -1,6 +1,7 @@
 import pandas as pd
 import wrds
 
+
 def main():
     print("Loading practicelist.csv...")
     df = pd.read_csv("practicelist.csv")
@@ -33,6 +34,7 @@ def main():
     out = pd.DataFrame(wrds_records)
     out.to_csv("wrds_mapping.csv", index=False)
     print("\nSaved → wrds_mapping.csv")
+
 
 if __name__ == "__main__":
     main()

@@ -19,7 +19,9 @@ def test_summarize_disclosure_returns_string(monkeypatch):
         return "Mock summary result."
 
     # Replace the real function logic temporarily if it calls the API
-    monkeypatch.setattr("summarize_disclosure.summarize_disclosure", mock_genai_response)
+    monkeypatch.setattr(
+        "summarize_disclosure.summarize_disclosure", mock_genai_response
+    )
 
     # --- run the test ---
     result = summarize_disclosure(tmp_path, "Summarize this document")
