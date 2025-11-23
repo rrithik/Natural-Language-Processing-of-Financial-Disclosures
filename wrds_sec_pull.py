@@ -1,5 +1,5 @@
-import pandas as pd
-import wrds
+import pandas as pd # type: ignore[import-untyped]
+import wrds  # type: ignore[import-not-found]
 
 
 def main():
