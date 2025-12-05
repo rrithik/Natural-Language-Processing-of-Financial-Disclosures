@@ -30,7 +30,7 @@ jobs:
       # -------------------------
       - name: Run Black formatter
         run: |
-          black src scripts
+          black nlp_modules
 
       # -------------------------
       # FLAKE8 CONFIG
@@ -40,18 +40,18 @@ jobs:
           echo "[flake8]" > .flake8
           echo "max-line-length = 100" >> .flake8
           echo "extend-ignore = E203, W503" >> .flake8
-          echo "exclude = .git,__pycache__,build,dist,venv,venv311,.venv,notebooks,data,*.ipynb" >> .flake8
+          echo "exclude = .git,__pycache__,build,dist,venv,venv311,.venv,data,notebooks,prompts,*.ipynb" >> .flake8
 
       # -------------------------
       # FLAKE8 RUN
       # -------------------------
       - name: Run Flake8
         run: |
-          flake8 src scripts
+          flake8 nlp_modules
 
       # -------------------------
       # MYPY
       # -------------------------
       - name: Run MyPy type checker
         run: |
-          mypy src scripts --ignore-missing-imports
+          mypy nlp_modules --ignore-missing-imports
