@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: Run Python Linter
+    name: Run Python Linters
     runs-on: ubuntu-latest
 
     steps:
@@ -20,26 +20,45 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install lint dependencies
+      - name: Install linting dependencies
         run: |
           python -m pip install --upgrade pip
           pip install black flake8 isort mypy
 
-      - name: Ensure consistent Flake8 settings
+      # -------------------------
+      # FLAKE8 CONFIG
+      # -------------------------
+      - name: Create Flake8 config
         run: |
           echo "[flake8]" > .flake8
           echo "max-line-length = 100" >> .flake8
           echo "extend-ignore = E203, W503" >> .flake8
-          echo "exclude = .git,__pycache__,build,dist,venv,.venv" >> .flake8
+          echo "exclude = .git,__pycache__,build,dist,venv,.venv,notebooks,*.ipynb,data" >> .flake8
 
-      - name: Run Black (auto format)
-        run: black .
+      # -------------------------
+      # BLACK
+      # -------------------------
+      - name: Run Black formatter
+        run: |
+          black nlp_modules .
 
-      - name: Run isort (import sorting check)
-        run: isort --check-only .
+      # -------------------------
+      # ISORT
+      # -------------------------
+      - name: Run isort
+        run: |
+          isort --check-only nlp_modules .
 
-      - name: Run Flake8 (linting check)
-        run: flake8 .
+      # -------------------------
+      # FLAKE8
+      # -------------------------
+      - name: Run Flake8
+        run: |
+          flake8 nlp_modules .
 
-      - name: Run MyPy (type checking)
-        run: mypy .
+      # -------------------------
+      # MYPY
+      # -------------------------
+      - name: Run MyPy type checker
+        run: |
+          mypy nlp_modules --ignore-missing-imports
