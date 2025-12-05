@@ -30,7 +30,7 @@ jobs:
       # -------------------------
       - name: Run Black formatter
         run: |
-          black src scripts
+          black .
 
       # -------------------------
       # FLAKE8 CONFIG
