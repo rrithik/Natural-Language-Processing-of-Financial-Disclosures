@@ -1,4 +1,4 @@
-import wrds # type: ignore[import-not-found]
+import wrds  # type: ignore[import-not-found]
 
 print("Attempting WRDS connection...")
 
