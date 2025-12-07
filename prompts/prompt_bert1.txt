@@ -1,0 +1,58 @@
+You are an expert financial analyst. Analyze the following financial document.
+
+It is BERTopic analysis of a financial document.  
+The format is as follows:
+
+Topic 0 | chunks=101
+Label: 0_report_communications_number_commission
+Top words: report, communications, number, commission, commencement, date, address, former, code, name
+
+Topic 1 | chunks=81
+Label: 1_gaap_operating_fiscal_loss
+Top words: gaap, operating, fiscal, loss, quarter, excluded, income, performance, amortization, assets
+
+...
+
+Below this section you will also see an summary for each topic, such as:
+(0, '0.047*"report" + 0.044*"communications" + 0.043*"number" + ...)
+
+For each topic:
+- The topic ID appears before the parenthesis.
+- Inside each parenthesis, a list of word-weight pairs shows the weight of each word in that topic.
+
+Your tasks:
+
+===============================================================================
+1. Calculate topic proportions
+===============================================================================
+For each topic ID, calculate the **topic proportion** by summing the weights of all words listed for that topic in the parenthesis version.
+
+===============================================================================
+2. Make table of topics
+===============================================================================
+Add each selected topic to a table in this format:
+
+| Topic ID | FileName | Date | Topic Number | Topic Proportion |
+
+Use placeholder fields:
+- FileName: use the filename provided or write "Unknown" if none provided.
+- Date: use the date provided or write "Unknown".
+
+===============================================================================
+3. Create the topic-name key table
+===============================================================================
+Using the word lists associated with each chosen topic, infer a concise financial topic name (e.g., “GAAP Operating Losses”, “Loan Credit Facility”, “Forward-Looking Statements”, etc.)
+
+Format the table like this:
+
+| Topic Number | Topic Name | Topic Description |
+
+===============================================================================
+4. Output
+===============================================================================
+Print:
+1. The first table (topics over the threshold)
+2. The second table (topic names)
+
+===============================================================================
+Here is the document to analyze:
