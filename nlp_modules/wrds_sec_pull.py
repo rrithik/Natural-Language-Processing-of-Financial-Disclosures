@@ -1,4 +1,4 @@
-import pandas as pd # type: ignore[import-untyped]
+import pandas as pd  # type: ignore[import-untyped]
 import wrds  # type: ignore[import-not-found]
 
 

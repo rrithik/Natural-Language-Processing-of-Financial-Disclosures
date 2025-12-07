@@ -47,11 +47,11 @@ jobs:
       # -------------------------
       - name: Run Flake8
         run: |
-          flake8 src scripts
+          flake8 .
 
       # -------------------------
       # MYPY
       # -------------------------
       - name: Run MyPy type checker
         run: |
-          mypy src scripts --ignore-missing-imports
+          mypy . --ignore-missing-imports
