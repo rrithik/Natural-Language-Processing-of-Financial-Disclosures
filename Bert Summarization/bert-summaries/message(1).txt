@@ -1,0 +1,44 @@
+Topic 0 | chunks=94
+Label: 0_report_communications_number_commission
+Top words: report, communications, number, commission, commencement, address, date, former, code, name
+
+Topic 1 | chunks=85
+Label: 1_gaap_operating_fiscal_loss
+Top words: gaap, operating, fiscal, loss, quarter, performance, excluded, income, amortization, assets
+
+Topic 2 | chunks=32
+Label: 2_statements_looking_forward_report
+Top words: statements, looking, forward, report, dated, current, advanced, micro, devices, duly
+
+Topic 3 | chunks=12
+Label: 3_agreement_target_equity_purchase
+Top words: agreement, target, equity, purchase, underwriters, will, services, license, certain, closing
+
+Topic 4 | chunks=10
+Label: 4_represents_severance_charges_employee
+Top words: represents, severance, charges, employee, associated, exhibits, costs, workforce, stock, participant
+
+Topic 5 | chunks=10
+Label: 5_loan_make_debt_certain
+Top words: loan, make, debt, certain, parties, amount, secured, default, liens, million
+
+Topic 6 | chunks=8
+Label: 6_wafer_amendment_supply_warrant
+Top words: wafer, amendment, supply, warrant, agreement, sixth, fifth, wafers, year, purchase
+
+Topic 7 | chunks=8
+Label: 7_financial_measures_calculated_accordance
+Top words: financial, measures, calculated, accordance, gaap, devinder, kumar, duly, investors, exhibits
+
+Topic 8 | chunks=6
+Label: 8_indenture_trading_common_trustee
+Top words: indenture, trading, common, trustee, conversion, september, base, stock, supplemental, price
+(0, '0.048*"report" + 0.046*"communications" + 0.044*"number" + 0.036*"commission" + 0.035*"commencement" + 0.034*"address" + 0.034*"date" + 0.034*"former" + 0.034*"code" + 0.033*"name"')
+(1, '0.083*"gaap" + 0.066*"operating" + 0.061*"fiscal" + 0.058*"loss" + 0.05*"quarter" + 0.045*"performance" + 0.043*"excluded" + 0.039*"income" + 0.037*"amortization" + 0.037*"assets"')
+(2, '0.058*"statements" + 0.051*"looking" + 0.051*"forward" + 0.042*"report" + 0.039*"dated" + 0.038*"current" + 0.037*"advanced" + 0.036*"micro" + 0.035*"devices" + 0.035*"duly"')
+(3, '0.159*"agreement" + 0.113*"target" + 0.108*"equity" + 0.091*"purchase" + 0.078*"underwriters" + 0.076*"will" + 0.075*"services" + 0.066*"license" + 0.06*"certain" + 0.06*"closing"')
+(4, '0.147*"represents" + 0.1*"severance" + 0.09*"charges" + 0.073*"employee" + 0.063*"associated" + 0.052*"exhibits" + 0.05*"costs" + 0.049*"workforce" + 0.048*"stock" + 0.045*"participant"')
+(5, '0.131*"loan" + 0.079*"make" + 0.072*"debt" + 0.071*"certain" + 0.071*"parties" + 0.07*"amount" + 0.065*"secured" + 0.063*"default" + 0.061*"liens" + 0.059*"million"')
+(6, '0.121*"wafer" + 0.111*"amendment" + 0.08*"supply" + 0.075*"warrant" + 0.074*"agreement" + 0.071*"sixth" + 0.062*"fifth" + 0.059*"wafers" + 0.055*"year" + 0.047*"purchase"')
+(7, '0.168*"financial" + 0.135*"measures" + 0.123*"calculated" + 0.118*"accordance" + 0.089*"gaap" + 0.087*"devinder" + 0.085*"kumar" + 0.079*"duly" + 0.078*"investors" + 0.074*"exhibits"')
+(8, '0.17*"indenture" + 0.111*"trading" + 0.076*"common" + 0.075*"trustee" + 0.074*"conversion" + 0.071*"september" + 0.064*"base" + 0.059*"stock" + 0.056*"supplemental" + 0.056*"price"')

@@ -1,0 +1,17 @@
+Document,FileName,Date,ParsedTopicCount,TopicSummary,Category,Confidence,Rationale
+0,message(1).txt,,9,"Topic 8: indenture:0.170, trading:0.111, common:0.076, trustee:0.075, conversion:0.074, september:0.071, base:0.064, stock:0.059
+Topic 7: financial:0.168, measures:0.135, calculated:0.123, accordance:0.118, gaap:0.089, devinder:0.087, kumar:0.085, duly:0.079
+Topic 3: agreement:0.159, target:0.113, equity:0.108, purchase:0.091, underwriters:0.078, will:0.076, services:0.075, license:0.066
+Topic 4: represents:0.147, severance:0.100, charges:0.090, employee:0.073, associated:0.063, exhibits:0.052, costs:0.050, workforce:0.049
+Topic 5: loan:0.131, make:0.079, debt:0.072, certain:0.071, parties:0.071, amount:0.070, secured:0.065, default:0.063
+Topic 6: wafer:0.121, amendment:0.111, supply:0.080, warrant:0.075, agreement:0.074, sixth:0.071, fifth:0.062, wafers:0.059
+Topic 1: gaap:0.083, operating:0.066, fiscal:0.061, loss:0.058, quarter:0.050, performance:0.045, excluded:0.043, income:0.039
+Topic 2: statements:0.058, looking:0.051, forward:0.051, report:0.042, dated:0.039, current:0.038, advanced:0.037, micro:0.036",Corporate Financial and Legal Documents,0.9,"The topics consistently feature keywords related to financial reporting (GAAP, financial measures, income, loss), financial instruments (stock, indenture, debt, equity, loan), and various corporate agreements (purchase agreement, supply agreement, license, underwriters). This indicates a strong focus on corporate finance, financial reporting, and associated legal contracts."
+1,message(2).txt,,19,"Topic 13: higher:0.254, revenue:0.242, asp:0.224, currencyneutral:0.117, increased:0.115, primarily:0.104, mens:0.104, direct:0.104
+Topic 12: customer:0.195, collected:0.103, sale:0.095, revenueproducing:0.068, shipment:0.067, assessed:0.066, transaction:0.064, concurrent:0.063
+Topic 18: asset:0.176, carrying:0.146, impairment:0.133, intangible:0.130, value:0.124, group:0.105, indefinitelived:0.094, goodwill:0.093
+Topic 16: balance:0.168, derivative:0.160, collateral:0.128, liability:0.125, sheets:0.095, exchange:0.095, instrument:0.094, million:0.089
+Topic 3: tax:0.155, deferred:0.062, income:0.060, fiscal:0.040, benefit:0.040, million:0.036, effective:0.033, asset:0.031
+Topic 15: expense:0.151, million:0.112, advertising:0.110, expensed:0.106, costs:0.099, presentation:0.082, endorsement:0.074, creation:0.073
+Topic 9: stock:0.141, common:0.137, share:0.120, class:0.102, redeemable:0.073, preferred:0.059, par:0.046, earnings:0.042
+Topic 5: currency:0.131, foreign:0.098, dollar:0.054, rate:0.051, exposure:0.048, exchange:0.048, hedge:0.047, us:0.047",Financial Reporting,0.95,"The keywords across all topics consistently point to financial concepts, including revenue, assets, liabilities, expenses, stock, tax, and currency, which are all integral components of financial reporting."
