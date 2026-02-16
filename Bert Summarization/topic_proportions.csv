@@ -1,29 +1,29 @@
-Document,FileName,Date,Topic,Proportion
-0,message(1).txt,,8,0.17
-0,message(1).txt,,7,0.168
-0,message(1).txt,,3,0.159
-0,message(1).txt,,4,0.147
-0,message(1).txt,,5,0.131
-0,message(1).txt,,6,0.121
-0,message(1).txt,,1,0.083
-0,message(1).txt,,2,0.058
-0,message(1).txt,,0,0.048
-1,message(2).txt,,13,0.2539
-1,message(2).txt,,12,0.195
-1,message(2).txt,,18,0.176
-1,message(2).txt,,16,0.1679
-1,message(2).txt,,3,0.1551
-1,message(2).txt,,15,0.1509
-1,message(2).txt,,9,0.1405
-1,message(2).txt,,5,0.1305
-1,message(2).txt,,17,0.1043
-1,message(2).txt,,11,0.1009
-1,message(2).txt,,14,0.0986
-1,message(2).txt,,7,0.0943
-1,message(2).txt,,4,0.0882
-1,message(2).txt,,0,0.084
-1,message(2).txt,,8,0.0818
-1,message(2).txt,,10,0.0614
-1,message(2).txt,,1,0.044
-1,message(2).txt,,6,0.0413
-1,message(2).txt,,2,0.0261
+Document,FileName,Date,Topic,TopicName,Proportion
+0,message(1).txt,,8,"indenture, trading, common",0.17
+0,message(1).txt,,7,"financial, measures, calculated",0.168
+0,message(1).txt,,3,"agreement, target, equity",0.159
+0,message(1).txt,,4,"represents, severance, charges",0.147
+0,message(1).txt,,5,"loan, make, debt",0.131
+0,message(1).txt,,6,"wafer, amendment, supply",0.121
+0,message(1).txt,,1,"gaap, operating, fiscal",0.083
+0,message(1).txt,,2,"statements, looking, forward",0.058
+0,message(1).txt,,0,"report, communications, number",0.048
+1,message(2).txt,,13,"higher, revenue, asp",0.2539
+1,message(2).txt,,12,"customer, collected, sale",0.195
+1,message(2).txt,,18,"asset, carrying, impairment",0.176
+1,message(2).txt,,16,"balance, derivative, collateral",0.1679
+1,message(2).txt,,3,"tax, deferred, income",0.1551
+1,message(2).txt,,15,"expense, million, advertising",0.1509
+1,message(2).txt,,9,"stock, common, share",0.1405
+1,message(2).txt,,5,"currency, foreign, dollar",0.1305
+1,message(2).txt,,17,"intellectual, property, publicity",0.1043
+1,message(2).txt,,11,"stock, restricted, grant",0.1009
+1,message(2).txt,,14,"payment, endorser, contract",0.0986
+1,message(2).txt,,7,"stock, blackout, policy",0.0943
+1,message(2).txt,,4,"financial, control, statement",0.0882
+1,message(2).txt,,0,"participant, agreement, participants",0.084
+1,message(2).txt,,8,"derivative, cash, hedge",0.0818
+1,message(2).txt,,10,"report, form, nikes",0.0614
+1,message(2).txt,,1,"debt, maturity, date",0.044
+1,message(2).txt,,6,"business, result, trade",0.0413
+1,message(2).txt,,2,"brand, income, nike",0.0261

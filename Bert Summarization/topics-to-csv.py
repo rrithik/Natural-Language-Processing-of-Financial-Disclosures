@@ -208,13 +208,20 @@ def main():
 
         # 2) Long-format topic distribution (many rows per doc)
         for topic_id, prop in dist:
+            terms = parsed_topics.get(topic_id, [])
+            
+            # Build topic name from top 3 terms
+            topic_name = ", ".join([t for t, _ in terms[:3]]) if terms else ""
+
             long_rows.append({
                 "Document": doc_idx,
                 "FileName": p.name,
                 "Date": date,
                 "Topic": topic_id,
+                "TopicName": topic_name,
                 "Proportion": prop,
             })
+
 
         print(f"[{doc_idx+1}/{len(files)}] {p.name} -> {result.category} ({result.confidence:.2f})")
         time.sleep(0.15)
@@ -233,7 +240,8 @@ def main():
     with out_long.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["Document", "FileName", "Date", "Topic", "Proportion"]
+            fieldnames=["Document", "FileName", "Date", "Topic", "TopicName", "Proportion"]
+
         )
         writer.writeheader()
         writer.writerows(long_rows)

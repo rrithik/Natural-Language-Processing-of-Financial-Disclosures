@@ -14,4 +14,4 @@ Topic 16: balance:0.168, derivative:0.160, collateral:0.128, liability:0.125, sh
 Topic 3: tax:0.155, deferred:0.062, income:0.060, fiscal:0.040, benefit:0.040, million:0.036, effective:0.033, asset:0.031
 Topic 15: expense:0.151, million:0.112, advertising:0.110, expensed:0.106, costs:0.099, presentation:0.082, endorsement:0.074, creation:0.073
 Topic 9: stock:0.141, common:0.137, share:0.120, class:0.102, redeemable:0.073, preferred:0.059, par:0.046, earnings:0.042
-Topic 5: currency:0.131, foreign:0.098, dollar:0.054, rate:0.051, exposure:0.048, exchange:0.048, hedge:0.047, us:0.047",Financial Reporting,0.95,"The keywords across all topics consistently point to financial concepts, including revenue, assets, liabilities, expenses, stock, tax, and currency, which are all integral components of financial reporting."
+Topic 5: currency:0.131, foreign:0.098, dollar:0.054, rate:0.051, exposure:0.048, exchange:0.048, hedge:0.047, us:0.047",Financial Reporting,0.95,"The topics consistently feature keywords related to revenue, expenses, assets, liabilities, equity, taxes, and foreign currency, indicating a focus on financial statements and disclosures."
