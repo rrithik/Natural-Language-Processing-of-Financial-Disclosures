@@ -1,8 +1,0 @@
-#!/Users/user/CS461/NLP/Natural-Language-Processing-of-Financial-Disclosures/venv311/bin/python3.11
-# -*- coding: UTF-8 -*-
-from __future__ import print_function, division, absolute_import
-
-from numba.misc.numba_entry import main
-
-if __name__ == "__main__":
-    main()
