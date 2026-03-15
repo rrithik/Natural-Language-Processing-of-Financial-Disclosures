@@ -21,16 +21,48 @@ pending partner confirmation
 feature/* → PR → ≥ 1 review → merge
 
 
-#  How to Run the Project
+#  0. How to Run the Project
 
 This repository contains the initial **text scraping pipeline** for our *Natural Language Processing of Financial Disclosures* project.  
 The scraper reads a local `.txt` file (e.g., SEC 8-K filing) and extracts all text content for topic analysis.
 
-##  Setup & Execution
+## 1. Setup & Execution
 Clone the repository:
 
 `git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures.git
 cd Natural-Language-Processing-of-Financial-Disclosures`
+
+
+## 2. Create a Virtual Environment (Optional but Recommended)
+
+Creating a virtual environment keeps the project dependencies isolated from your system Python.
+
+### Mac / Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+## 3. Install Dependencies
+
+### Required API
+```bash
+pip install bertopic spacy beautifulsoup4 google-generativeai
+```
+
+### Install spaCy Language Model
+
+```bash
+python -m spacy download en_core_web_sm
+```
 
 Prepare your input file:
 
