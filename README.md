@@ -20,11 +20,15 @@ pending partner confirmation
 ## Branching flow:
 feature/* → PR → ≥ 1 review → merge
 
+---
+<br />
+
 
 # How to Run the Project
 
 This repository contains the initial **text scraping pipeline** for our *Natural Language Processing of Financial Disclosures* project.  
 The scraper reads a local `.txt` file (e.g., SEC 8-K filing) and extracts all text content for topic analysis.
+
 
 ## 1. Setup & Execution
 Clone the repository:
@@ -34,8 +38,8 @@ git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Di
 ```bash
 cd Natural-Language-Processing-of-Financial-Disclosures`
 ```
-
 ---
+<br />
 
 ## 2. Create a Virtual Environment (Optional but Recommended)
 
@@ -66,6 +70,7 @@ deactivate
 ```
 
 ---
+<br />
 
 ## 3. Install Dependencies
 
@@ -81,8 +86,9 @@ python -m spacy download en_core_web_sm
 ```
 
 ---
+<br />
 
-Prepare your input file:
+## Prepare your input file:
 
 Place your `.txt` document (for example: sample_8K.txt) inside the project folder.
 Open the scraper script (e.g., scraper_basic.py) and update the filename variable at the top of the file to match your document name:
