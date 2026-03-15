@@ -71,13 +71,13 @@ deactivate
 
 ### Required API
 ```bash
-pip3 install bertopic spacy beautifulsoup4 google-generativeai
+pip install bertopic spacy beautifulsoup4 google-generativeai
 ```
 
 ### Install spaCy Language Model
 
 ```bash
-python3 -m spacy download en_core_web_sm
+python -m spacy download en_core_web_sm
 ```
 
 ---
@@ -89,7 +89,7 @@ Open the scraper script (e.g., scraper_basic.py) and update the filename variabl
 file_name = "sample_8K.txt"
 ### Run the scraper:
 ```bash
-python3 scraper_basic.py
+python scraper_basic.py
 ```
 ### View output:
 
