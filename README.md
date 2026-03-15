@@ -30,7 +30,7 @@ This repository contains the initial **text scraping pipeline** for our *Natural
 The scraper reads a local `.txt` file (e.g., SEC 8-K filing) and extracts all text content for topic analysis.
 
 
-## 1. Setup & Execution
+## 1. Getting Started
 Clone the repository:
 ```bash
 git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures.git
