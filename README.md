@@ -35,6 +35,7 @@ git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Di
 cd Natural-Language-Processing-of-Financial-Disclosures`
 ```
 
+---
 
 ## 2. Create a Virtual Environment (Optional but Recommended)
 
@@ -64,6 +65,8 @@ venv\Scripts\activate
 deactivate
 ```
 
+---
+
 ## 3. Install Dependencies
 
 ### Required API
@@ -76,6 +79,8 @@ pip3 install bertopic spacy beautifulsoup4 google-generativeai
 ```bash
 python3 -m spacy download en_core_web_sm
 ```
+
+---
 
 Prepare your input file:
 
