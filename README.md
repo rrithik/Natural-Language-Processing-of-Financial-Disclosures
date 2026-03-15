@@ -21,16 +21,19 @@ pending partner confirmation
 feature/* → PR → ≥ 1 review → merge
 
 
-#  0. How to Run the Project
+# How to Run the Project
 
 This repository contains the initial **text scraping pipeline** for our *Natural Language Processing of Financial Disclosures* project.  
 The scraper reads a local `.txt` file (e.g., SEC 8-K filing) and extracts all text content for topic analysis.
 
 ## 1. Setup & Execution
 Clone the repository:
-
-`git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures.git
+```bash
+git clone https://github.com/rrithik/Natural-Language-Processing-of-Financial-Disclosures.git
+```
+```bash
 cd Natural-Language-Processing-of-Financial-Disclosures`
+```
 
 
 ## 2. Create a Virtual Environment (Optional but Recommended)
@@ -41,6 +44,8 @@ Creating a virtual environment keeps the project dependencies isolated from your
 
 ```bash
 python3 -m venv venv
+```
+```bash
 source venv/bin/activate
 ```
 
@@ -48,20 +53,28 @@ source venv/bin/activate
 
 ```bash
 python -m venv venv
+```
+```bash
 venv\Scripts\activate
+```
+
+### Deactivate the Environment
+
+```bash
+deactivate
 ```
 
 ## 3. Install Dependencies
 
 ### Required API
 ```bash
-pip install bertopic spacy beautifulsoup4 google-generativeai
+pip3 install bertopic spacy beautifulsoup4 google-generativeai
 ```
 
 ### Install spaCy Language Model
 
 ```bash
-python -m spacy download en_core_web_sm
+python3 -m spacy download en_core_web_sm
 ```
 
 Prepare your input file:
@@ -70,7 +83,9 @@ Place your `.txt` document (for example: sample_8K.txt) inside the project folde
 Open the scraper script (e.g., scraper_basic.py) and update the filename variable at the top of the file to match your document name:
 file_name = "sample_8K.txt"
 ### Run the scraper:
-`python scraper_basic.py`
+```bash
+python3 scraper_basic.py
+```
 ### View output:
 
 The program will print the extracted text or save it to an output file (depending on the current configuration).
