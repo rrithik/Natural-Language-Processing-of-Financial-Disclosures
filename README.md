@@ -109,14 +109,8 @@ Must contain **ONE of the following columns**:
 - `path` → SEC public file path (recommended)  
 - `fname` → SEC file name (alternative)
 
-Example:
-path
-edgar/data/320193/0000320193-23-000010.txt
 
-or
-
-fname
-edgar/data/320193/0000320193-23-000010.txt
+See example CSV in the `/data` folder of this repository.
 
 ---
 
