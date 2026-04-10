@@ -94,7 +94,8 @@ This section explains how to extract and download cleaned SEC filings using the 
 
 WRDS Jupyter Lab: https://wrds-jupyter.wharton.upenn.edu/
 
-Copy the notebook `wrds_get_clean.ipynb` located in the `/wrds` folder to the WRDS JupyterHub.
+Copy the notebook `wrds_get_clean.ipynb` located in the `/wrds` folder to your WRDS Jupyter Lab home directory.
+
 
 ### ⚠️ Requirement
  - This pipeline ONLY runs on WRDS Jupyter (not local).
