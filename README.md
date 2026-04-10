@@ -92,9 +92,11 @@ python -m spacy download en_core_web_sm
 # How to Get Clean Filings from WRDS Jupyter Lab
 This section explains how to extract and download cleaned SEC filings using the WRDS Jupyter environment.
 
-## ⚠️ Requirement
-This pipeline ONLY runs on WRDS Jupyter (not local).
-You will need a WRDS account to log in.
+WRDS Juypter Lab: https://wrds-jupyter.wharton.upenn.edu/
+
+### ⚠️ Requirement
+ - This pipeline ONLY runs on WRDS Jupyter (not local).
+ - You will need a WRDS account to log in.
 
 ---
 
