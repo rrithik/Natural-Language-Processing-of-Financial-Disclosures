@@ -88,6 +88,93 @@ python -m spacy download en_core_web_sm
 ---
 <br />
 
+
+# How to Get Clean Filings from WRDS Jupyter Lab
+This section explains how to extract and download cleaned SEC filings using the WRDS Jupyter environment.
+
+## ⚠️ Requirement
+This pipeline ONLY runs on WRDS Jupyter (not local).
+You will need a WRDS account to log in.
+
+---
+
+## Input
+
+Prepare a CSV file:
+
+fname_list.csv
+
+Must contain **ONE of the following columns**:
+
+- `path` → SEC public file path (recommended)  
+- `fname` → SEC file name (alternative)
+
+Example:
+path
+edgar/data/320193/0000320193-23-000010.txt
+
+or
+
+fname
+edgar/data/320193/0000320193-23-000010.txt
+
+---
+
+## Setup
+
+Create your scratch folder:
+
+```bash
+mkdir /scratch/oregonstate/<your_folder>
+```
+
+Update the output path in code:
+/scratch/oregonstate/kuohsu
+→ /scratch/oregonstate/<your_folder>
+
+---
+
+## Run
+
+Click the ▶ Run button at the top of the WRDS Jupyter notebook  
+
+---
+
+## Output
+You can find the output folder in this path:
+```bash
+cd /scratch/oregonstate/<your_folder>/filings_text/
+```
+
+- Clean `.txt` only  
+- Keeps main filing + EX-10, EX-99  
+- Removes HTML / XBRL / junk  
+
+---
+
+## Download
+
+```bash
+~/filings_text.zip
+```
+
+Download via:
+- your home directory
+
+
+---
+
+## Notes
+
+- `/scratch` files expire (~1 week)  
+- Download ASAP
+- Download time depends on file size and server performance
+- If split ZIP appears (`.z01`, `.z02`...), download ALL parts and extract directly in WinRAR.
+
+---
+
+
+
 ## Prepare your input file:
 
 Place your `.txt` document (for example: sample_8K.txt) inside the project folder.
